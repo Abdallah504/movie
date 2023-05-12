@@ -31,14 +31,14 @@ class DescriptionScreen extends StatelessWidget {
                     ),
                     Positioned(
                       bottom: 10 ,
-                      child:Text('  ⭐Average Rating  ${vote}',style: TextStyle(fontSize: 18),) )
+                      child:Text('  ⭐Average Rating  ${vote}',style: TextStyle(fontSize: 18,color: Colors.white),) )
                 ],
               ),
             ),
             const SizedBox(height: 15,),
             Container(
               padding:EdgeInsets.only(left: 10) ,
-              child: Text('Released on : ${launch_on}',style: TextStyle(fontSize: 14)),
+              child: Text('Released on : ${launch_on}',style: TextStyle(fontSize: 14,color: Colors.white)),
               ),
               const SizedBox(height: 35,),
               Row(
@@ -50,7 +50,7 @@ class DescriptionScreen extends StatelessWidget {
                     child: Image.network(posterUrl),
                   ),
                   Flexible(
-                    child: Text(description,style: TextStyle(fontSize: 15),))
+                    child: Text(description,style: TextStyle(fontSize: 15,color: Colors.white),))
                 ],
               )
           ],

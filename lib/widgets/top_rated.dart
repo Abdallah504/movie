@@ -54,7 +54,7 @@ class TopRated extends StatelessWidget {
                         ),
                         SizedBox(height: 10,),
                         Container(
-                          child: Text(topRated[index]['title']!=null ? topRated[index]['title']:'Loading'),
+                          child: Text(topRated[index]['title']!=null ? topRated[index]['title']:'Loading',style: TextStyle(color: Colors.white),),
                         )
                       ],
                     ),

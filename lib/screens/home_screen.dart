@@ -46,8 +46,9 @@ void initState() {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.black,
-        title: const Text('Movawy',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+        title: const Text('Movawy',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.white),),
       ),
       body: ListView(
         children: [

@@ -48,7 +48,7 @@ class TvWidget extends StatelessWidget {
                                 ),
                         ),
                         Container(
-                          child: Text(tv[index]['original_name']!=null ? tv[index]['original_name']:'Loading'),
+                          child: Text(tv[index]['original_name']!=null ? tv[index]['original_name']:'Loading',style: TextStyle(color: Colors.white)),
                         )
                       ],
                     ),

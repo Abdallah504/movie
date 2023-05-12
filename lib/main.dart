@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       
-      title: 'Flutter Demo',
+      
       theme: ThemeData(
         
         primaryColor: Colors.green,
         useMaterial3: true,
-        brightness: Brightness.dark
+        
       ),
       home: HomeScreen(),
     );

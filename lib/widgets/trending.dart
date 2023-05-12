@@ -49,7 +49,7 @@ class TrendingMovies extends StatelessWidget {
                                 ),
                         ),
                         Container(
-                          child: Text(trending[index]['title']!=null ? trending[index]['title']:'Loading'),
+                          child: Text(trending[index]['title']!=null ? trending[index]['title']:'Loading',style: TextStyle(color: Colors.white)),
                         )
                       ],
                     ),
