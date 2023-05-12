@@ -25,7 +25,7 @@ void initState() {
   
 }
   loadMovies()async{
-    TMDB tmdpCustomLog = TMDB(ApiKeys(apikey, accesstoken),logConfig: ConfigLogger(
+    TMDB tmdpCustomLog = TMDB(ApiKeys(apikey, accesstoken),logConfig: const ConfigLogger(
       showLogs: true,
       showErrorLogs: true
     ) );
@@ -38,7 +38,7 @@ void initState() {
       topRatedMoviesList = topRatedMovies['results'];
       tvList = tV['results'];
     });
-    print(tvList);
+    //print(tvList);
   }
 
   @override

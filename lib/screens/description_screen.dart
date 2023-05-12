@@ -9,7 +9,7 @@ class DescriptionScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        leading: BackButton(color: Colors.white,),
+        leading: const BackButton(color: Colors.white,),
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: Text(name!=null?name:'Not Loaded',style: TextStyle(color: Colors.white),),
@@ -31,26 +31,26 @@ class DescriptionScreen extends StatelessWidget {
                     ),
                     Positioned(
                       bottom: 10 ,
-                      child:Text('  ⭐Average Rating  ${vote}',style: TextStyle(fontSize: 18,color: Colors.white),) )
+                      child:Text('  ⭐Average Rating  ${vote}',style: const TextStyle(fontSize: 18,color: Colors.white),) )
                 ],
               ),
             ),
             const SizedBox(height: 15,),
             Container(
-              padding:EdgeInsets.only(left: 10) ,
-              child: Text('Released on : ${launch_on}',style: TextStyle(fontSize: 14,color: Colors.white)),
+              padding:const EdgeInsets.only(left: 10) ,
+              child: Text('Released on : ${launch_on}',style: const TextStyle(fontSize: 14,color: Colors.white)),
               ),
               const SizedBox(height: 35,),
               Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.all(5),
+                    margin: const EdgeInsets.all(5),
                     height: 200,
                     width: 100,
                     child: Image.network(posterUrl),
                   ),
                   Flexible(
-                    child: Text(description,style: TextStyle(fontSize: 15,color: Colors.white),))
+                    child: Text(description,style: const TextStyle(fontSize: 15,color: Colors.white),))
                 ],
               )
           ],
