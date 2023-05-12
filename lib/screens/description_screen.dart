@@ -9,10 +9,10 @@ class DescriptionScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        leading: BackButton(),
+        leading: BackButton(color: Colors.white,),
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: Text(name!=null?name:'Not Loaded'),
+        title: Text(name!=null?name:'Not Loaded',style: TextStyle(color: Colors.white),),
       ),
       backgroundColor: Colors.black,
       body: Container(
